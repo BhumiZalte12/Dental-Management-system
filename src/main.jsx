@@ -5,11 +5,11 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { DentalProvider } from "./context/DentalContext";
-import { initializeDataOnce } from "./utils/helpers"; // ✅ Correct import
+import { initializeDataOnce } from "./utils/helpers"; 
 
 import "./index.css";
 
-// ✅ Initialize mock data only once
+
 initializeDataOnce();
 
 ReactDOM.createRoot(document.getElementById("root")).render(

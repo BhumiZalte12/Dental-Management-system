@@ -12,17 +12,17 @@ import CalendarPage from "./pages/admin/CalendarPage";
 import PatientView from "./pages/patient/PatientView";
 
 import ProtectedRoute from "./components/ProtectedRoute";
-import LayoutWithNavbar from "./layout/LayoutWithNavbar"; // ✅ Layout wrapper with Navbar
+import LayoutWithNavbar from "./layout/LayoutWithNavbar"; 
 
 export default function App() {
   return (
     <Routes>
-      {/* Public Routes */}
+      
       <Route path="/" element={<LandingPage />} />
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/login/:role" element={<LoginPage />} />
 
-      {/* Admin Routes with Navbar */}
+     
       <Route
         path="/admin/dashboard"
         element={
@@ -64,7 +64,7 @@ export default function App() {
         }
       />
 
-      {/* Patient Route with Navbar */}
+      
       <Route
         path="/me"
         element={
@@ -76,7 +76,7 @@ export default function App() {
         }
       />
 
-      {/* Fallback */}
+      
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

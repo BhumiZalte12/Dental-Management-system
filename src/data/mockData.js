@@ -30,8 +30,8 @@ export const mockData = {
       title: "Toothache",
       description: "Upper molar pain",
       comments: "Sensitive to cold",
-      appointmentDate: new Date(Date.now() + 86400000).toISOString(), // 1 day from now
-      cost: 80,
+      appointmentDate: new Date(Date.now() + 86400000).toISOString(), 
+      cost: 180,
       status: "Completed",
       treatment: "Filling",
       files: [],

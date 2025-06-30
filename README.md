@@ -29,23 +29,11 @@ A modern, responsive dental clinic management system built with **React**, **Tai
 
 ---
 
-## 📸 Screenshots
-
-### 🔐 Login Page  
-![Login Page](./screenshots/login.png)
-
-### 📊 Admin Dashboard  
-![Dashboard](./screenshots/dashboard.png)
-
-### 📅 Appointment Calendar  
-![Calendar](./screenshots/calendar.png)
-
----
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/entnt-dental-dashboard.git
-cd entnt-dental-dashboard
+git clone https://github.com/your-username/Dental-Management-system.git
+cd dental-dashboard

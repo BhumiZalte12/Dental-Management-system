@@ -16,17 +16,17 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
+       
         <Link to="/" className="text-2xl font-extrabold text-sky-700 tracking-wide">
           🦷 ENTNT Dental Care
         </Link>
 
-        {/* Navigation Links */}
+       
         <div className="hidden md:flex items-center gap-6">
           <Link to="/LandingPage" className="text-gray-700 hover:text-sky-700 font-medium transition duration-200">Home</Link>
           <Link to="/contact" className="text-gray-700 hover:text-sky-700 font-medium transition duration-200">Contact</Link>
 
-          {/* Admin Navigation */}
+          
           {user?.role === "Admin" && (
             <>
               <Link to="/admin/dashboard" className="text-gray-700 hover:text-sky-700 font-medium transition">Dashboard</Link>
@@ -36,12 +36,12 @@ export default function Navbar() {
             </>
           )}
 
-          {/* Patient Navigation */}
+        
           {user?.role === "Patient" && (
             <Link to="/me" className="text-gray-700 hover:text-sky-700 font-medium transition">My Profile</Link>
           )}
 
-          {/* Auth Buttons */}
+          
           {!user ? (
             <div className="relative">
               <button

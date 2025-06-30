@@ -9,7 +9,7 @@ export default function LoginPage() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    // Redirect logged-in users to their appropriate dashboards
+    
     if (user) {
       const path = user.role === 'Admin' ? '/admin/dashboard' : '/me';
       navigate(path, { replace: true });

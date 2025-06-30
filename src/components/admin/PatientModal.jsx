@@ -30,7 +30,7 @@ export default function PatientModal({ onClose, onSave, patient }) {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Name */}
+          
           <div className="flex items-center border rounded px-3 py-2">
             <FaUser className="text-sky-600 mr-2" />
             <input
@@ -44,7 +44,7 @@ export default function PatientModal({ onClose, onSave, patient }) {
             />
           </div>
 
-          {/* Date of Birth */}
+          
           <div className="flex items-center border rounded px-3 py-2">
             <FaBirthdayCake className="text-sky-600 mr-2" />
             <input
@@ -57,7 +57,7 @@ export default function PatientModal({ onClose, onSave, patient }) {
             />
           </div>
 
-          {/* Contact */}
+          
           <div className="flex items-center border rounded px-3 py-2">
             <FaPhone className="text-sky-600 mr-2" />
             <input
@@ -71,7 +71,7 @@ export default function PatientModal({ onClose, onSave, patient }) {
             />
           </div>
 
-          {/* Health Info */}
+          
           <div className="flex items-start border rounded px-3 py-2">
             <FaHeartbeat className="text-sky-600 mr-2 mt-1" />
             <textarea
@@ -84,7 +84,7 @@ export default function PatientModal({ onClose, onSave, patient }) {
             />
           </div>
 
-          {/* Buttons */}
+         
           <div className="flex justify-end gap-3 pt-4">
             <button
               type="button"

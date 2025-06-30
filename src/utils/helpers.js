@@ -1,4 +1,3 @@
-// src/utils/helpers.js
 
 export function initializeDataOnce() {
   if (!localStorage.getItem("dental_data_initialized")) {

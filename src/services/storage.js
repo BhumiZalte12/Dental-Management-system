@@ -21,7 +21,6 @@ export const deletePatient = (id) => {
   localStorage.setItem('dental_patients', JSON.stringify(patients));
 };
 
-// Similar functions for incidents
 export const getIncidents = () => {
   return JSON.parse(localStorage.getItem('dental_incidents')) || [];
 };

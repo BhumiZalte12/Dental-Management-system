@@ -7,7 +7,7 @@ import getDay from 'date-fns/getDay';
 import enUS from 'date-fns/locale/en-US';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { DentalContext } from '../../context/DentalContext';
-import EventDetailsModal from '../../components/admin/EventDetailsModal'; // ✅ Import modal
+import EventDetailsModal from '../../components/admin/EventDetailsModal';
 
 const locales = { 'en-US': enUS };
 
@@ -48,11 +48,11 @@ export default function CalendarPage() {
           startAccessor="start"
           endAccessor="end"
           style={{ height: 600 }}
-          onSelectEvent={(event) => setSelectedEvent(event)} // ✅ Open modal
+          onSelectEvent={(event) => setSelectedEvent(event)} 
         />
       </div>
 
-      {/* Modal for Event Details */}
+     
       {selectedEvent && (
         <EventDetailsModal
           event={selectedEvent}

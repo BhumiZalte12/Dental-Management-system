@@ -4,13 +4,13 @@ import Navbar from "../components/Navbar";
 import Appointment from "../components/admin/Appointment";
 
 export default function LandingPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false); // 🔹 State to control modal
+  const [isModalOpen, setIsModalOpen] = useState(false); 
 
   return (
     <>
       <Navbar />
       <div className="pt-20">
-        {/* Hero Section */}
+       
         <section className="flex flex-col md:flex-row items-center justify-between px-10 py-20 bg-sky-50">
           <div className="max-w-xl mb-10 md:mb-0">
             <h1 className="text-5xl font-extrabold text-sky-800 mb-6 leading-tight">
@@ -33,14 +33,14 @@ export default function LandingPage() {
           />
         </section>
 
-        {/* Services Section */}
+       
         <Services />
 
-        {/* Appointment Section with Modal Control */}
+        
         <Appointment isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       </div>
 
-      {/* Footer */}
+      
       <footer className="bg-sky-800 text-white mt-16">
         <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>

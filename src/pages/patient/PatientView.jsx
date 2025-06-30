@@ -17,7 +17,7 @@ export default function PatientView() {
 
   return (
     <div className="p-6 space-y-10 max-w-6xl mx-auto">
-      {/* 👤 My Information */}
+     
       <section className="bg-white p-6 rounded-lg shadow-md border">
         <h2 className="text-2xl font-semibold text-blue-700 flex items-center gap-2 mb-4">
           👤 My Information
@@ -30,7 +30,7 @@ export default function PatientView() {
         </div>
       </section>
 
-      {/* 📅 Upcoming Appointments */}
+      
       <section className="bg-white p-6 rounded-lg shadow-md border">
         <h2 className="text-2xl font-semibold text-blue-700 flex items-center gap-2 mb-4">
           📅 Upcoming Appointments
@@ -59,7 +59,7 @@ export default function PatientView() {
         )}
       </section>
 
-      {/* 🏥 Treatment History */}
+     
       <section className="bg-white p-6 rounded-lg shadow-md border">
         <h2 className="text-2xl font-semibold text-blue-700 flex items-center gap-2 mb-4">
           🏥 Treatment History
@@ -82,7 +82,7 @@ export default function PatientView() {
                   <p><span className="font-medium">Treatment:</span> {incident.treatment || "N/A"}</p>
                   <p><span className="font-medium">Status:</span> {incident.status}</p>
 
-                  {/* 📎 File Attachments */}
+                 
                   {incident.files?.length > 0 && (
                     <div className="mt-2">
                       <p className="font-medium text-sm mb-1">📎 Attachments:</p>
