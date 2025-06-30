@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Optional: global styles */
+.nav-link {
+  @apply text-gray-700 hover:text-sky-700 font-medium transition duration-200;
+}
+
+.dropdown-link {
+  @apply block px-4 py-2 hover:bg-sky-100 text-gray-700 transition;
+}
+
+/* Optional animation for dropdown */
+@keyframes fade {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fade 0.2s ease-in-out;
+}
 
 @layer components {
   .btn-primary {

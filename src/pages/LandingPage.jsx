@@ -4,43 +4,50 @@ import Navbar from "../components/Navbar";
 import Appointment from "../components/admin/Appointment";
 
 export default function LandingPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
       <Navbar />
       <div className="pt-20">
-       
-        <section className="flex flex-col md:flex-row items-center justify-between px-10 py-20 bg-sky-50">
-          <div className="max-w-xl mb-10 md:mb-0">
-            <h1 className="text-5xl font-extrabold text-sky-800 mb-6 leading-tight">
-              Entrust your <span className="text-sky-600">smile</span> to professionals
-            </h1>
-            <p className="text-gray-700 text-lg mb-8">
-              Modern dental care with a personal touch. We use the latest technology and a compassionate approach to ensure a pain-free, healthy smile.
-            </p>
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="inline-block bg-sky-600 text-white px-6 py-3 rounded shadow hover:bg-sky-700 transition"
-            >
-              Book Appointment
-            </button>
+        {/* Hero Section */}
+        <section className="bg-sky-50 py-16 px-4">
+          <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+            {/* Left Content */}
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-sky-800 leading-tight mb-6">
+                Entrust your <span className="text-sky-600">smile</span> to professionals
+              </h1>
+              <p className="text-gray-700 text-base sm:text-lg mb-6">
+                Modern dental care with a personal touch. We use the latest technology and a compassionate approach to ensure a pain-free, healthy smile.
+              </p>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="bg-sky-600 text-white px-6 py-3 rounded shadow hover:bg-sky-700 transition"
+              >
+                Book Appointment
+              </button>
+            </div>
+
+            {/* Right Image */}
+            <div className="w-full md:w-1/2">
+              <img
+                src="/clinic-bg.png"
+                alt="Dental Clinic"
+                className="w-full max-w-md mx-auto rounded-xl shadow-lg"
+              />
+            </div>
           </div>
-          <img
-            src="/clinic-bg.png"
-            alt="Dental Clinic"
-            className="w-full md:max-w-2xl rounded-xl shadow-lg"
-          />
         </section>
 
-       
+        {/* Services */}
         <Services />
 
-        
+        {/* Appointment Modal */}
         <Appointment isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       </div>
 
-      
+      {/* Footer */}
       <footer className="bg-sky-800 text-white mt-16">
         <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
