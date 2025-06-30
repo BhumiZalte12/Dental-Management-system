@@ -27,7 +27,7 @@ export default function LandingPage() {
             </button>
           </div>
           <img
-            src="src/assets/clinic-bg.png"
+            src="/clinic-bg.png"
             alt="Dental Clinic"
             className="w-full md:max-w-2xl rounded-xl shadow-lg"
           />
