@@ -59,9 +59,53 @@ Use the following mock credentials to log in:
 | Vercel            | Deployment                |
 
 ---
+## 🏗️ Project Architecture
+
+📦 src
+ ┣ 📂assets            # Static images/icons
+ ┣ 📂components
+ ┃ ┣ 📂admin           # Admin-specific UI components (modals, tables)
+ ┃ ┣ 📂auth            # Login form
+ ┃ ┣ 📂common          # Reusable components (e.g., KPIWidget, FileUploader)
+ ┃ ┗ 📜Navbar.jsx      # Top navigation bar
+ ┣ 📂context           # Context API for global state management
+ ┣ 📂data              # Mock patient and incident data
+ ┣ 📂hooks             # Custom hooks (e.g., useLocalStorage)
+ ┣ 📂layout            # Layout component with navbar
+ ┣ 📂pages
+ ┃ ┣ 📂admin           # Admin pages (Dashboard, Patients, Incidents)
+ ┃ ┣ 📂patient         # Patient profile page
+ ┃ ┗ 📜LandingPage.jsx # Marketing landing page
+ ┣ 📂services          # Storage layer for CRUD on localStorage
+ ┣ 📂styles            # Tailwind CSS files
+ ┣ 📂utils             # Helper functions and constants
+ ┣ 📜App.jsx           # Root application
+ ┗ 📜main.jsx          # Entry point
+
+## ⚠️ Known Issues
+
+❌ No actual backend/API (data is reset on localStorage clear)
+
+📆 Calendar currently displays events but has limited interaction
+
+🖼️ File preview limited to basic rendering — no advanced validation
+
+🚫 No role protection on route level (basic implementation only)
 
 
----
+## 🧩 Technical Decisions
+
+✅ localStorage over mock server to reduce backend dependencies and simplify testing.
+
+🧠 Context API chosen for light state needs instead of Redux.
+
+🛠️ Used Framer Motion for card animation on Services section.
+
+🌐 All icons from Heroicons, ensuring clean design.
+
+⚡ Switched from image import to public/ folder for static assets after Vercel deployment issues.
+
+
 
 ## 🧪 Usage Instructions
 
